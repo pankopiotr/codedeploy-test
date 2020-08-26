@@ -9,6 +9,6 @@ permissions:
     group: <group that user lives in>
 hooks:
   AfterInstall:
-    - location: script/AfterInstall.sh
+    - location: scripts/AfterInstall.sh
   ApplicationStart:
-    - location: script/ApplicationStart.sh
+    - location: scripts/ApplicationStart.sh
