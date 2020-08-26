@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/codedeploy-test
+permissions:
+  - object: <the directory your code will live>
+    owner: <user who will deploy your code>
+    group: <group that user lives in>
+hooks:
+  AfterInstall:
+    - location: script/AfterInstall.sh
+  ApplicationStart:
+    - location: script/ApplicationStart.sh
